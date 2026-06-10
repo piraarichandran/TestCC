@@ -1,83 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceylon Green Construction and Consultancy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceylon Green Construction & Consultancy</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4fff4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 700px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-        h1 {
-            color: #1b8a3c;
-            margin-bottom: 20px;
-        }
+header {
+    background: #0f5f2d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        p {
-            color: #444;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
 
-        .coming-soon {
-            color: #2e7d32;
-            font-weight: bold;
-            font-size: 22px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
 
-        .contact {
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid #ddd;
-        }
+.hero {
+    background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 140px 20px;
+}
 
-        .contact a {
-            color: #1b8a3c;
-            text-decoration: none;
-        }
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
 
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+.hero p {
+    font-size: 22px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #22a447;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0f5f2d;
+    font-size: 36px;
+}
+
+.about {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #0f5f2d;
+    margin-bottom: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.project {
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact {
+    background: #0f5f2d;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #90ffaf;
+    text-decoration: none;
+}
+
+footer {
+    background: #08371a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Ceylon Green Construction and Consultancy</h1>
 
-        <p class="coming-soon">🚧 Website Coming Soon 🚧</p>
+<header>
+    <div class="logo">CEYLON GREEN</div>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Building Sustainable Futures</h1>
+    <p>Professional Construction & Consultancy Services in Sri Lanka</p>
+
+    <a href="#contact" class="btn">Get a Free Consultation</a>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <div class="about">
         <p>
-            We provide professional construction and consultancy services
-            with a commitment to quality, sustainability, and customer satisfaction.
+            Ceylon Green Construction & Consultancy delivers reliable,
+            sustainable and cost-effective construction solutions.
+            We specialize in residential, commercial and infrastructure
+            projects while maintaining the highest standards of quality,
+            safety and environmental responsibility.
         </p>
-
-        <div class="contact">
-            <h3 style="color:#1b8a3c;">Contact Us</h3>
-            <p>
-                Sayanthan<br>
-                📧 <a href="mailto:sayanuwu@gmail.com">sayanuwu@gmail.com</a><br>
-                📞 <a href="tel:+94779235640">+94 77 923 5640</a>
-            </p>
-        </div>
     </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Construction</h3>
+            <p>Residential, commercial and industrial building projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Management</h3>
+            <p>Planning, coordination and delivery of successful projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultancy</h3>
+            <p>Expert advice for design, planning and execution.</p>
+        </div>
+
+        <div class="card">
+            <h3>Renovation</h3>
+            <p>Modernisation and refurbishment of existing properties.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="">
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" alt="">
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800" alt="">
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p><strong>Sayanthan</strong></p>
+
+    <p>
+        Email:
+        <a href="mailto:sayanuwu@gmail.com">
+            sayanuwu@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Phone:
+        <a href="tel:+94779235640">
+            +94 77 923 5640
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    © 2026 Ceylon Green Construction & Consultancy. All Rights Reserved.
+</footer>
+
 </body>
 </html>
